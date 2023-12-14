@@ -290,6 +290,7 @@ a {
     flex-direction: column;
     gap: 100px;
     padding-top: 100px;
+    margin-bottom: 80px;
 }
 
 .about__main-text {
@@ -336,6 +337,7 @@ a {
 
 .footer__nav-list_item {
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 .footer__socials-list_icon {
     width: 48px;

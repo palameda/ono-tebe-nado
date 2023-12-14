@@ -1,13 +1,7 @@
-/* место для вашего кода */
 body {
-    width: 1440px;
-    height: 2844px;
+    max-width: 1440px;
     background: #fff;
     margin: auto;
-}
-
-section {
-    min-height: 100px;
 }
 
 button {
@@ -23,17 +17,15 @@ button {
 }
 
 .header {
-    min-height: 100px;
     margin: 92px 49px;
     display: flex;
     position: relative;
-    /* background-color: blueviolet; */
-    height: 109px;
+
 }
 
 .header__nav {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -57,7 +49,6 @@ button {
     margin-right: 10px;
     padding: 0 12px 0 11px;
     position: relative;
-    left: -9px;
     text-underline-offset: 4px;
 }
 
@@ -68,29 +59,32 @@ button {
 .header__logo {
     width: 148px;
     height: 105px;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
+    margin-left: 15%;
 }
 
-.header__address-list {
-    display: block;
+.contacts-list {
     list-style: none;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 135%;
+    width: 250px;
+}
+
+.contacts-position-right {
     position: absolute;
     right: 0;
     top: 5px;
-    width: 240px;
-    height: 97px;
 }
 
-.header__address-list-item-link {
+.contacts-position-left {
+    position: absolute;
+    left: 0;
+}
+
+.contacts-list__items-link {
     text-underline-offset: 4px;
 }
 
@@ -113,10 +107,10 @@ button {
     top: 0;
 }
 
-.jambotron__header {
+.jambotron__caption {
     margin: 165px 50px 237px;
     color: #fff;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
@@ -128,41 +122,21 @@ button {
     z-index: 1;
 }
 
-.jambotron__header-left-first {
-    letter-spacing: 30px;
-    line-height: 115%; /* 115px */
+.jambotron__caption-left {
+    letter-spacing: 24px;
+    line-height: 115%;
 }
 
-.jambotron__header-left-others {
-    letter-spacing: 60px;
-    line-height: 115%; /* 115px */
-}
-
-.jambotron__header-center-first {
+.jambotron__caption-center {
     text-align: center;
-    line-height: 100%; /* 100px */
-    letter-spacing: 30px;
-}
-
-.jambotron__header-center-others {
     line-height: 100%;
-    letter-spacing: 60px;
+    letter-spacing: 24px;
 }
 
-.jambotron__header-right-first {
+.jambotron__caption-bottom {
     text-align: right;
-    line-height: 100%; /* 100px */
-    letter-spacing: 60px;
-}
-
-.jambotron__header-right-second {
     line-height: 100%;
-    letter-spacing: 30px;
-}
-
-.jambotron__header-right-third {
-    line-height: 100%;
-    letter-spacing: 0;
+    letter-spacing: 18px;
 }
 
 .jambotron__footer {
@@ -199,7 +173,7 @@ button {
     border: 1px solid #fff;
     color: #fff;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -212,7 +186,7 @@ button {
 
 .lots__title {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -228,7 +202,7 @@ button {
     margin-top: 27px;
 }
 
-.lots__list-item_first {
+.lots__list-item_left {
     background-image: url("../images/card-lot-01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,7 +225,7 @@ button {
 .lots__item-header {
     margin: 50px 40px 0;
     color: #fff;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -265,7 +239,7 @@ button {
 .lots__item-text {
     margin: 0 40px 50px;
     color: #fff;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -273,14 +247,14 @@ button {
     z-index: 1;
 }
 
-.lots__list-item_second {
+.lots__list-item_center {
     background-image: url("../images/card-lot-02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
 }
 
-.lots__list-item_third {
+.lots__list-item_right {
     background-image: url("../images/card-lot-03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,7 +266,7 @@ button {
     margin-left: 40px;
     display: block;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -311,7 +285,7 @@ button {
 
 .about__logo-column {
     margin: 0 auto;
-    border-radius: 120px;
+    border-radius: 50%;
     background-color: #000;
     width: 240px;
     height: 240px;
@@ -362,20 +336,6 @@ button {
     justify-content: space-between;
 }
 
-.footer__address-list {
-    list-style: none;
-    color: #000;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 135%;
-    position: absolute;
-    left: 0;
-    width: 240px;
-    height: 97px;
-}
-
 .footer__nav-list {
     list-style-type: none;
     display: flex;
@@ -394,7 +354,6 @@ button {
 
 .footer__socials-list {
     width: 240px;
-    height: 48px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;

@@ -24,17 +24,17 @@
       </li>
     </ul>
   </nav>
-  <a>
-    <img class="header__logo" src="./images/logo-black.svg" alt="логотип оно тебе надо"
+  <a class="header__logo" >
+    <img src="./images/logo-black.svg" alt="логотип оно тебе надо"
     />
   </a>
   <address>
-    <ul class="header__address-list">
+    <ul class="contacts-list contacts-position-right">
       <li>
-        <a  href="tel:+99995555555" target="_blank" class="header__address-list-item-link">+9 999 555 5555</a>
+        <a href="tel:+99995555555" target="_blank" class="contacts-list__items-link">+9 999 555 5555</a>
       </li>
       <li>
-        <a href="mailto:info@sobaka.ge" target="_blank" class="header__address-list-item-link">info@sobaka.ge</a>
+        <a href="mailto:info@sobaka.ge" target="_blank" class="contacts-list__items-link">info@sobaka.ge</a>
       </li>
       <li>
         наб. Принсенграхт 263-265, Амстердам
@@ -44,11 +44,16 @@
 </header>
 <main>
   <section class="jambotron">
-    <h1 class="jambotron__header">
-      <span class="jambotron__header-left-first">о<span class="jambotron__header-left-others">но</span></span>
-      <span class="jambotron__header-center-first">те<span class="jambotron__header-center-others">бе</span></span>
-      <span class="jambotron__header-right-first">н<span class="jambotron__header-right-second">ад</span>
-      <span class="jambotron__header-right-third">о</span></span>
+    <h1 class="jambotron__caption">
+      <span class="jambotron__caption-left">он
+        <span>о</span>
+      </span>
+      <span class="jambotron__caption-center">теб
+        <span>е</span>
+      </span>
+      <span class="jambotron__caption-bottom">н
+        <span>адо</span>
+      </span>
     </h1>
     <div class="overlay"></div>
     <div class="jambotron__footer">
@@ -56,15 +61,15 @@
             <span class="jambotron__subline-prelast">Аукцион вещей, в которые никто не</span>
         верил
       </p>
-      <button class="jambotron__button">Сделать ставку</button>
+      <button type="button" class="jambotron__button">Сделать ставку</button>
     </div>
   </section>
   <section class="lots">
     <h2 class="lots__title">Лоты</h2>
     <ul class="lots__list">
-      <li class="lots__list-item">
+      <li>
         <a href="#" class="card__link">
-          <article class="card lots__list-item_first">
+          <article class="card lots__list-item_left">
             <h3 class="lots__item-header">
               Фильм режиссёра, который бросил киношколу
             </h3>
@@ -79,7 +84,7 @@
       </li>
       <li>
         <a href="#" class="card__link">
-          <article class="card lots__list-item_second">
+          <article class="card lots__list-item_center">
             <h3 class="lots__item-header">
               Книга, где описан один скучный день из жизни рекламного агента
             </h3>
@@ -97,7 +102,7 @@
       </li>
       <li>
         <a href="#" class="card__link">
-          <article class="card lots__list-item_third">
+          <article class="card lots__list-item_right">
             <h3 class="lots__item-header">
               Картина, которую повторит даже 5-летний сын маминой подруги
             </h3>
@@ -143,42 +148,44 @@
 </main>
 <footer class="footer">
   <address>
-    <ul class="footer__address-list">
+    <ul class="contacts-list contacts-position-left">
       <li>
-        <a href="tel:+99995555555" target="_blank" class="header__address-list-item-link">+9 999 555 5555</a>
+        <a href="tel:+99995555555" target="_blank" class="contacts-list__items-link">+9 999 555 5555</a>
       </li>
       <li>
-        <a href="mailto:info@sobaka.ge" target="_blank" class="header__address-list-item-link">info@sobaka.ge</a>
+        <a href="mailto:info@sobaka.ge" target="_blank" class="contacts-list__items-link">info@sobaka.ge</a>
       </li>
       <li>
         наб. Принсенграхт 263-265, Амстердам
       </li>
     </ul>
   </address>
-  <ul class="footer__nav-list" >
-    <li>
-      <a href="#" target="_blank" class="link-no-decoration">главная</a>
-    </li>
-    <li>
-      <a href="#" target="_blank">посмотреть лоты</a>
-    </li>
-    <li>
-      <a href="#" target="_blank" >об аукционе</a>
-    </li>
-  </ul>
-  <address>
-    <ul class="footer__socials-list">
+  <nav class="footer__nav-list" >
+    <ul>
       <li>
-        <a><img src="/images/yt.svg" alt="логотип youtube" /></a>
+        <a href="#" target="_blank" class="link-no-decoration">главная</a>
       </li>
       <li>
-        <a><img src="/images/vk.svg" alt="логотип vkontakte" /></a>
+        <a href="#" target="_blank">посмотреть лоты</a>
       </li>
       <li>
-        <a><img src="/images/pinterest.svg" alt="логотип pinterest" /></a>
+        <a href="#" target="_blank" >об аукционе</a>
       </li>
     </ul>
-  </address>
+  </nav>
+  <section>
+    <ul class="footer__socials-list">
+      <li>
+        <a><img src="./images/yt.svg" alt="логотип youtube" /></a>
+      </li>
+      <li>
+        <a><img src="./images/vk.svg" alt="логотип vkontakte" /></a>
+      </li>
+      <li>
+        <a><img src="./images/pinterest.svg" alt="логотип pinterest" /></a>
+      </li>
+    </ul>
+  </section>
 </footer>
 </body>
 </html>

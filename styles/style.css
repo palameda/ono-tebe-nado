@@ -25,7 +25,7 @@ a {
     grid-template: 100% / repeat(3, 1fr);
     margin: 92px 49px;
     align-items: center;
-    justify-items: center;
+    justify-items: stretch;
 }
 
 .header__nav-list {
@@ -49,7 +49,8 @@ a {
 }
 
 .header__logo {
-    width: 148px;
+    justify-self: center;
+    width: 134px;
     height: 105px;
 }
 
@@ -98,21 +99,23 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
-    letter-spacing: 20px;
+    gap: 20px;
     z-index: 1;
 }
 
 .jambotron__caption-left {
+    letter-spacing: 20px;
     line-height: 115%;
 }
 
 .jambotron__caption-center {
     text-align: center;
+    letter-spacing: 30px;
     line-height: 100%;
 }
 
 .jambotron__caption-bottom {
+    letter-spacing: 20px;
     text-align: right;
     line-height: 100%;
 }
@@ -258,6 +261,7 @@ a {
     grid-template-columns: 430px 1fr;
     grid-template-rows: auto;
     column-gap: 25px;
+    padding-bottom: 10px;
 }
 
 .about__logo-column {
